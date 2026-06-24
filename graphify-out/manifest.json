@@ -1,0 +1,807 @@
+{
+  "app/build.gradle.kts": {
+    "mtime": 1781869382.0,
+    "ast_hash": "b83366ddceb40af05de825cc6d5d4a11",
+    "semantic_hash": "b83366ddceb40af05de825cc6d5d4a11"
+  },
+  "app/src/androidTest/java/neth/iecal/curbox/ExampleInstrumentedTest.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "738fbf85909eb9bfeaabfc3cfe73262c",
+    "semantic_hash": "738fbf85909eb9bfeaabfc3cfe73262c"
+  },
+  "app/src/main/java/neth/iecal/curbox/Constants.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "476badacf4142756cf85e389edb0d972",
+    "semantic_hash": "476badacf4142756cf85e389edb0d972"
+  },
+  "app/src/main/java/neth/iecal/curbox/CrashLogger.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "b1abfd384dbbb65274af8dff520c1851",
+    "semantic_hash": "b1abfd384dbbb65274af8dff520c1851"
+  },
+  "app/src/main/java/neth/iecal/curbox/Curbox.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "4bbdfd8f22815cdec757ad40575daa4b",
+    "semantic_hash": "4bbdfd8f22815cdec757ad40575daa4b"
+  },
+  "app/src/main/java/neth/iecal/curbox/anti_stimulants/AutoDnd.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "1ba985c228a95f2fe4ae648280535716",
+    "semantic_hash": "1ba985c228a95f2fe4ae648280535716"
+  },
+  "app/src/main/java/neth/iecal/curbox/anti_stimulants/GrayScaleFilter.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "4b24f6bd5727a0f5485ece6bcfe68da2",
+    "semantic_hash": "4b24f6bd5727a0f5485ece6bcfe68da2"
+  },
+  "app/src/main/java/neth/iecal/curbox/anti_stimulants/MindfulMessage.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "de894b1a170a81c757292cb48eeebc2c",
+    "semantic_hash": "de894b1a170a81c757292cb48eeebc2c"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/AppBlocker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "a85f75fc29159854ad5b06896527d5ce",
+    "semantic_hash": "a85f75fc29159854ad5b06896527d5ce"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/BaseBlocker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "9cf83db5df281de1aa0b53bf6b075e9b",
+    "semantic_hash": "9cf83db5df281de1aa0b53bf6b075e9b"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/BrowserBlocker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "21be72ba8296163a3e4238d68d8a8dfb",
+    "semantic_hash": "21be72ba8296163a3e4238d68d8a8dfb"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/FocusModeBlocker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "820b9991f7b3799b79315d9d1a353a76",
+    "semantic_hash": "820b9991f7b3799b79315d9d1a353a76"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/KeywordBlocker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "61870e15424d2eaa1c2b342161a3e211",
+    "semantic_hash": "61870e15424d2eaa1c2b342161a3e211"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/ReelBlocker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "0b89ec1cc8389453d2098d1a1211180f",
+    "semantic_hash": "0b89ec1cc8389453d2098d1a1211180f"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/NodeFinder.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "a4256f9d6c09e01e15af032703e5631b",
+    "semantic_hash": "a4256f9d6c09e01e15af032703e5631b"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/NodePicker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "c7c353ed281995f87ca3a4a687da5631",
+    "semantic_hash": "c7c353ed281995f87ca3a4a687da5631"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/NodePickerOverlay.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "7bfb8ea9db55b5286b81f0b2493487c0",
+    "semantic_hash": "7bfb8ea9db55b5286b81f0b2493487c0"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/ScriptStore.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "180d6944bdcf317ea663b6a9aa103ec1",
+    "semantic_hash": "180d6944bdcf317ea663b6a9aa103ec1"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/UiHider.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "ed2fb0fc130345a7db6c33837393c36b",
+    "semantic_hash": "ed2fb0fc130345a7db6c33837393c36b"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/UiHiderOverlayManager.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "b7fe131335a4438203287154554edda4",
+    "semantic_hash": "b7fe131335a4438203287154554edda4"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/UiHiderRuntime.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "177d0de5309dfc62a9b01756df28d4b9",
+    "semantic_hash": "177d0de5309dfc62a9b01756df28d4b9"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/script/Ast.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "9080f7aa47a580c55484df5f5e3b46b4",
+    "semantic_hash": "9080f7aa47a580c55484df5f5e3b46b4"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/script/Budget.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "2daa019317007971465c9f7586f38f8b",
+    "semantic_hash": "2daa019317007971465c9f7586f38f8b"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/script/Builtins.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "55b981777799e354bce3504f961725f3",
+    "semantic_hash": "55b981777799e354bce3504f961725f3"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/script/Interpreter.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "042867585387473accba26105d5d9b2a",
+    "semantic_hash": "042867585387473accba26105d5d9b2a"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/script/Lexer.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "13e9344c2a74de00fce24dbacab686f0",
+    "semantic_hash": "13e9344c2a74de00fce24dbacab686f0"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/script/Parser.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "9f2ba0bcdab09390be66bb08b18e7d9c",
+    "semantic_hash": "9f2ba0bcdab09390be66bb08b18e7d9c"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/script/RuntimeApi.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "fbddf318673b021d6c0fa1058d5afbf3",
+    "semantic_hash": "fbddf318673b021d6c0fa1058d5afbf3"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/script/ScriptError.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "5c95cbd235be2ec7784eee4f619b32de",
+    "semantic_hash": "5c95cbd235be2ec7784eee4f619b32de"
+  },
+  "app/src/main/java/neth/iecal/curbox/blockers/uihider/script/Values.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "700d1d1b634894e42a4ce0093f51f1ee",
+    "semantic_hash": "700d1d1b634894e42a4ce0093f51f1ee"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/AppDatabase.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "23665b046187c4f0da50ad34d55a5c9f",
+    "semantic_hash": "23665b046187c4f0da50ad34d55a5c9f"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/AppUsageDao.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "a506f548cd937d3ee3b6f8b8363ef036",
+    "semantic_hash": "a506f548cd937d3ee3b6f8b8363ef036"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/AppUsageEntity.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "0725152d50057bbae84b90e1f45afd39",
+    "semantic_hash": "0725152d50057bbae84b90e1f45afd39"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/FocusStatsDao.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "041124db48ba7b508049cb31f3d589af",
+    "semantic_hash": "041124db48ba7b508049cb31f3d589af"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/FocusStatsEntity.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "8a46a281fb3da53d91b6ffd96f3e3be6",
+    "semantic_hash": "8a46a281fb3da53d91b6ffd96f3e3be6"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/IntentLogDao.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "55b3feff49e395cea33f601cbe890765",
+    "semantic_hash": "55b3feff49e395cea33f601cbe890765"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/IntentLogEntity.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "2f2deaaf7dec2e54bc97d92ca0889326",
+    "semantic_hash": "2f2deaaf7dec2e54bc97d92ca0889326"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/ReelStatsDao.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "57719d8833de37eecbd29b385de06671",
+    "semantic_hash": "57719d8833de37eecbd29b385de06671"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/ReelStatsEntity.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "5bd3ce4519bb4e2e53512b9cb5b15e52",
+    "semantic_hash": "5bd3ce4519bb4e2e53512b9cb5b15e52"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/ScrollPatternDao.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "c6a54aac4983409b143fd3264cd934fb",
+    "semantic_hash": "c6a54aac4983409b143fd3264cd934fb"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/ScrollPatternEntity.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "4f16a9cf6ddee2ffd69c7f40bfd7e807",
+    "semantic_hash": "4f16a9cf6ddee2ffd69c7f40bfd7e807"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/WebsiteStatsDao.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "49b3a94451d237fdf2c7adea65b57428",
+    "semantic_hash": "49b3a94451d237fdf2c7adea65b57428"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/db/WebsiteStatsEntity.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "90221b5ec8459364cb2d45880923170e",
+    "semantic_hash": "90221b5ec8459364cb2d45880923170e"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/AppBlocker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "4bee5a2121ad97b0d37e5c9ca9ea5f0c",
+    "semantic_hash": "4bee5a2121ad97b0d37e5c9ca9ea5f0c"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/AutoDndGroup.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "973295212278fa25cdaac465a4f7437b",
+    "semantic_hash": "973295212278fa25cdaac465a4f7437b"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/BrowserUrlBar.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "8a751398e63aea4764322ce31c45b97f",
+    "semantic_hash": "8a751398e63aea4764322ce31c45b97f"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/FocusBlockMode.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "e36d532c0445a57f3d344e322a81074c",
+    "semantic_hash": "e36d532c0445a57f3d344e322a81074c"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/GrayscaleGroup.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "af42a107cf40db4051079ef5da1bdada",
+    "semantic_hash": "af42a107cf40db4051079ef5da1bdada"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/KeywordBlocker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "00b193516858b9cc8a9917a635fe98b7",
+    "semantic_hash": "00b193516858b9cc8a9917a635fe98b7"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/ManualFocusGroup.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "054bb70bbdfc851d1dd38000920808a1",
+    "semantic_hash": "054bb70bbdfc851d1dd38000920808a1"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/MindfulMessageConfig.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "7b584df47a6411db586d15460d1ae1fb",
+    "semantic_hash": "7b584df47a6411db586d15460d1ae1fb"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/ReelAppData.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "b3768655f7af90769c28f26530665b7e",
+    "semantic_hash": "b3768655f7af90769c28f26530665b7e"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/ReelBlocker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "3831843996273a9c1d33b21fb82b5a49",
+    "semantic_hash": "3831843996273a9c1d33b21fb82b5a49"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/ReelCounterOverlayConfig.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "f968f81726fdd4b9cb7f2b6261d6e439",
+    "semantic_hash": "f968f81726fdd4b9cb7f2b6261d6e439"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/Settings.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "fb8d0f154e381f301fb84a8f8c0af97a",
+    "semantic_hash": "fb8d0f154e381f301fb84a8f8c0af97a"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/TimeInterval.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "1a21acf6e6f65943426351f3e4500fe9",
+    "semantic_hash": "1a21acf6e6f65943426351f3e4500fe9"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/UiHiderConfig.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "7519342a6446b8abecc010935834ce51",
+    "semantic_hash": "7519342a6446b8abecc010935834ce51"
+  },
+  "app/src/main/java/neth/iecal/curbox/data/models/WarningScreenConfig.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "430388cd3cb4d6fcadf9fe435a9f635f",
+    "semantic_hash": "430388cd3cb4d6fcadf9fe435a9f635f"
+  },
+  "app/src/main/java/neth/iecal/curbox/hardcoded/BrowserUrlBarIds.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "7451a2f003a6b6d53b84a9f870a6f7d5",
+    "semantic_hash": "7451a2f003a6b6d53b84a9f870a6f7d5"
+  },
+  "app/src/main/java/neth/iecal/curbox/hardcoded/ReelAppConfig.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "c27019690618f5ca8e511d5583d8b758",
+    "semantic_hash": "c27019690618f5ca8e511d5583d8b758"
+  },
+  "app/src/main/java/neth/iecal/curbox/hardcoded/UiHiderSamples.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "03dce545a4ef559553a9700a5ca03ccf",
+    "semantic_hash": "03dce545a4ef559553a9700a5ca03ccf"
+  },
+  "app/src/main/java/neth/iecal/curbox/receivers/AdminReceiver.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "c506477c3c73f4bdeaaade0f12c5c666",
+    "semantic_hash": "c506477c3c73f4bdeaaade0f12c5c666"
+  },
+  "app/src/main/java/neth/iecal/curbox/services/AppBlockerService.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "312246a74f9fb5d437ed343bf7fde6ed",
+    "semantic_hash": "312246a74f9fb5d437ed343bf7fde6ed"
+  },
+  "app/src/main/java/neth/iecal/curbox/services/BaseBlockingService.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "3f67bbfb3fec2709fd272feb87b3d810",
+    "semantic_hash": "3f67bbfb3fec2709fd272feb87b3d810"
+  },
+  "app/src/main/java/neth/iecal/curbox/services/NodePickerService.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "75e6408dd4645e46ba12ce68beef70dd",
+    "semantic_hash": "75e6408dd4645e46ba12ce68beef70dd"
+  },
+  "app/src/main/java/neth/iecal/curbox/services/UsageTrackingService.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "86e1edabae5afbf533049c95ec45ea7d",
+    "semantic_hash": "86e1edabae5afbf533049c95ec45ea7d"
+  },
+  "app/src/main/java/neth/iecal/curbox/trackers/AppUsageTracker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "a2ac51602466368bb4a28edac759f796",
+    "semantic_hash": "a2ac51602466368bb4a28edac759f796"
+  },
+  "app/src/main/java/neth/iecal/curbox/trackers/ReelsCountTracker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "3dcc9bd06126e0487c16ecd3ecf72a24",
+    "semantic_hash": "3dcc9bd06126e0487c16ecd3ecf72a24"
+  },
+  "app/src/main/java/neth/iecal/curbox/trackers/WebsiteUsageTracker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "5fe75d68d47b441c92605c9e627b22d1",
+    "semantic_hash": "5fe75d68d47b441c92605c9e627b22d1"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/activity/CrashLogActivity.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "bd96915e2d4997ab55acc73f02c96d33",
+    "semantic_hash": "bd96915e2d4997ab55acc73f02c96d33"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/activity/FragmentActivity.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "eddbcd56c3f2e8d0c7324ffad01b8550",
+    "semantic_hash": "eddbcd56c3f2e8d0c7324ffad01b8550"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/activity/PortraitCaptureActivity.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "5e7aa387823145ede6a2f32c6ff87c1d",
+    "semantic_hash": "5e7aa387823145ede6a2f32c6ff87c1d"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/activity/SelectAppsActivity.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "c2ff72540e25cd3356b22c82fd265f86",
+    "semantic_hash": "c2ff72540e25cd3356b22c82fd265f86"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/activity/WarningActivity.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "a8c212036290bf7c37d2f69e1cec159f",
+    "semantic_hash": "a8c212036290bf7c37d2f69e1cec159f"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/installation/AccessibilityGuide.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "1dffe26c0981978cf580a74e69649f98",
+    "semantic_hash": "1dffe26c0981978cf580a74e69649f98"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/installation/onboarding/OnboardingFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "3264cddec7a88ae346f15c89fb322856",
+    "semantic_hash": "3264cddec7a88ae346f15c89fb322856"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/installation/onboarding/OnboardingViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "a406f5aaac211bab2d6170767482a5f1",
+    "semantic_hash": "a406f5aaac211bab2d6170767482a5f1"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/installation/onboarding/screens/CoreValuesFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "4acb8bb394410c0839864339b91d7281",
+    "semantic_hash": "4acb8bb394410c0839864339b91d7281"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/installation/onboarding/screens/EmpathyFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "2ee0acdc269e72a8f9d07052790180e7",
+    "semantic_hash": "2ee0acdc269e72a8f9d07052790180e7"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/installation/onboarding/screens/OnboardingPermissionsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "9853fe2754916e886a763912d5e24994",
+    "semantic_hash": "9853fe2754916e886a763912d5e24994"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/installation/onboarding/screens/ScreenTimeEstimateFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "135e102743da7853d40e85ffcef25805",
+    "semantic_hash": "135e102743da7853d40e85ffcef25805"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/installation/onboarding/screens/TargetSelectionFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "b7c7ebad96a1e4616833855064e80c0b",
+    "semantic_hash": "b7c7ebad96a1e4616833855064e80c0b"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/InfoFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "e06eb719def977cb8c6ba3b4cb1dda2c",
+    "semantic_hash": "e06eb719def977cb8c6ba3b4cb1dda2c"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/focus/FocusFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "0fa41fef26cfaa9c3d60eed2586cc136",
+    "semantic_hash": "0fa41fef26cfaa9c3d60eed2586cc136"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/focus/FocusSetupBottomSheet.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "01912f949eb1793b398fd15bba2ef307",
+    "semantic_hash": "01912f949eb1793b398fd15bba2ef307"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/focus/FocusStatsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "160ca54ba8b05e0115c701e189c79bc8",
+    "semantic_hash": "160ca54ba8b05e0115c701e189c79bc8"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/focus/FocusViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "6ec4ce477774e40634ee120c6f60ff72",
+    "semantic_hash": "6ec4ce477774e40634ee120c6f60ff72"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/focus/RulerAdapter.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "b34e4244b93e3105e079ed7eed2564c2",
+    "semantic_hash": "b34e4244b93e3105e079ed7eed2564c2"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/ReducersFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "b60e81db48a73104f259f0f7a3ee1652",
+    "semantic_hash": "b60e81db48a73104f259f0f7a3ee1652"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/analytics/IntentsLogAdapter.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "c20f4372024ab0c290a55c4079c6af82",
+    "semantic_hash": "c20f4372024ab0c290a55c4079c6af82"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/analytics/IntentsLogFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "4c3ec4d388cedffdcd0d5616741925a1",
+    "semantic_hash": "4c3ec4d388cedffdcd0d5616741925a1"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/analytics/IntentsLogViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "733fc5d26c9a7a7af153072cd974553f",
+    "semantic_hash": "733fc5d26c9a7a7af153072cd974553f"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/anti_stimulants/grayscale/CreateGrayscaleGroupFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "370c8563cd4a53ddc2f2e7ad90b3ed67",
+    "semantic_hash": "370c8563cd4a53ddc2f2e7ad90b3ed67"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/anti_stimulants/grayscale/GrayscaleFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "fb025adc1e1ff6d19d2b9cc090e3de93",
+    "semantic_hash": "fb025adc1e1ff6d19d2b9cc090e3de93"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/anti_stimulants/grayscale/GrayscaleTimeSettingsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "b5b18dcaa7c37eec8284cd18f42bd580",
+    "semantic_hash": "b5b18dcaa7c37eec8284cd18f42bd580"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/anti_stimulants/grayscale/GrayscaleViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "17207b83e14eaffaac9ec9cdd0653fed",
+    "semantic_hash": "17207b83e14eaffaac9ec9cdd0653fed"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/anti_stimulants/mindful_messages/MindfulMessagesFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "34df2799401eec7d5e169c5a1fd3e711",
+    "semantic_hash": "34df2799401eec7d5e169c5a1fd3e711"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/anti_stimulants/mindful_messages/MindfulMessagesViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "4a7cd941523f00a732f5f210a8f2bedb",
+    "semantic_hash": "4a7cd941523f00a732f5f210a8f2bedb"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/anti_stimulants/reel_counter/ReelCounterFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "5b7d4944b3e68a1b323d19cdb32c66ad",
+    "semantic_hash": "5b7d4944b3e68a1b323d19cdb32c66ad"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/anti_stimulants/reel_counter/ReelCounterViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "4b687338ea6a45a57e076885780b4584",
+    "semantic_hash": "4b687338ea6a45a57e076885780b4584"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/TimeRangeAdapters.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "bdbd31ce14c0f43cbda7016cd2751694",
+    "semantic_hash": "bdbd31ce14c0f43cbda7016cd2751694"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/UsageSettingsAdapters.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "175fb95682e77160796f11d775cb6575",
+    "semantic_hash": "175fb95682e77160796f11d775cb6575"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/appBlocker/AppBlockerGroupsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "b7d4f01d615f35deb388e2e7dd77b202",
+    "semantic_hash": "b7d4f01d615f35deb388e2e7dd77b202"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/appBlocker/AppBlockerSettingViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "18f5af8215e9a79c4346499e448cea83",
+    "semantic_hash": "18f5af8215e9a79c4346499e448cea83"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/appBlocker/CreateAppGroupFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "3c4ff88d78232439f55666dfbe7b2903",
+    "semantic_hash": "3c4ff88d78232439f55666dfbe7b2903"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/appBlocker/TimeBasedSettingsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "f83c5cc4f74307f0521295cdf7f348ee",
+    "semantic_hash": "f83c5cc4f74307f0521295cdf7f348ee"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/appBlocker/UsageBasedSettingsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "14e38b265f9729ef574c64cf6f132f3b",
+    "semantic_hash": "14e38b265f9729ef574c64cf6f132f3b"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/autodnd/AutoDndFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "302f3b670f3a53b799eff9b627a5d8f9",
+    "semantic_hash": "302f3b670f3a53b799eff9b627a5d8f9"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/autodnd/AutoDndTimeSettingsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "c349c15e2dca6872c32661e6ab1f74c2",
+    "semantic_hash": "c349c15e2dca6872c32661e6ab1f74c2"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/autodnd/AutoDndViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "6ebad1be9614f98189c657671836172e",
+    "semantic_hash": "6ebad1be9614f98189c657671836172e"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/autodnd/CreateAutoDndGroupFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "fd3196988483d9dd95b23a691e94be20",
+    "semantic_hash": "fd3196988483d9dd95b23a691e94be20"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/keywordBlocker/CreateKeywordGroupFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "a9fb0b368a814de474bd7b1f3f85ee4d",
+    "semantic_hash": "a9fb0b368a814de474bd7b1f3f85ee4d"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/keywordBlocker/KeywordBlockerFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "7d1fa45b6ab8be30750d511fe8834a3e",
+    "semantic_hash": "7d1fa45b6ab8be30750d511fe8834a3e"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/keywordBlocker/KeywordBlockerViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "53508cbca8053d66a3c878a063af592e",
+    "semantic_hash": "53508cbca8053d66a3c878a063af592e"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/keywordBlocker/KeywordTimeBasedSettingsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "49f373e609b0d162539ee00d7cab66c9",
+    "semantic_hash": "49f373e609b0d162539ee00d7cab66c9"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/keywordBlocker/KeywordUsageBasedSettingsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "04e04a6a78ecf0b3d147bde16d83b7ae",
+    "semantic_hash": "04e04a6a78ecf0b3d147bde16d83b7ae"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/reelBlocker/ReelBlockerCountSettingsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "301e07bcfdf5beb48bf3bbdb05d6d428",
+    "semantic_hash": "301e07bcfdf5beb48bf3bbdb05d6d428"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/reelBlocker/ReelBlockerFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "c01f8fc469625a8b9c006c9f16937970",
+    "semantic_hash": "c01f8fc469625a8b9c006c9f16937970"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/reelBlocker/ReelBlockerTimeSettingsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "85f888695318da34177ab34cf627d903",
+    "semantic_hash": "85f888695318da34177ab34cf627d903"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/reelBlocker/ReelBlockerUsageSettingsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "8705becd00ee4acb756d6cfb587e6766",
+    "semantic_hash": "8705becd00ee4acb756d6cfb587e6766"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/reelBlocker/ReelBlockerViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "77b38ee79b8acdd53a3b2c24b3b8401f",
+    "semantic_hash": "77b38ee79b8acdd53a3b2c24b3b8401f"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/shared/BaseTimeSettingsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "ef28eaace3001cf084c2a5547a8105bd",
+    "semantic_hash": "ef28eaace3001cf084c2a5547a8105bd"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/shared/BaseUsageSettingsFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "62d8c59d10ae5344afdf99f277772bd2",
+    "semantic_hash": "62d8c59d10ae5344afdf99f277772bd2"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/shared/WarningConfigFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "df4fdfddae46105d1444d9e5c849bb20",
+    "semantic_hash": "df4fdfddae46105d1444d9e5c849bb20"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/uiHider/UiHiderEditorFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "881113940cfd32ad7efee741c058698c",
+    "semantic_hash": "881113940cfd32ad7efee741c058698c"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/uiHider/UiHiderFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "07ab0818ab7c711fd0086ed236bd3d98",
+    "semantic_hash": "07ab0818ab7c711fd0086ed236bd3d98"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/uiHider/UiHiderScriptAdapter.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "63b9bbf570651d7e7afc872a26741ff6",
+    "semantic_hash": "63b9bbf570651d7e7afc872a26741ff6"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/reducers/blockertools/uiHider/UiHiderViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "ed4bdf3a5c309c207308638a0fc0e418",
+    "semantic_hash": "ed4bdf3a5c309c207308638a0fc0e418"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/usage/AllAppsUsageFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "9775f09b87ddd759bc976ccf9c316ed4",
+    "semantic_hash": "9775f09b87ddd759bc976ccf9c316ed4"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/usage/AllAppsUsageViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "af36bb29046ffd2d26207b4354b1a772",
+    "semantic_hash": "af36bb29046ffd2d26207b4354b1a772"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/usage/AppUsageBreakdown.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "a6fc7e5c7e8240ad2a5f9f7543098ddc",
+    "semantic_hash": "a6fc7e5c7e8240ad2a5f9f7543098ddc"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/usage/SetupShortcutViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "517d25866ff6557ee06e01882c9e77c1",
+    "semantic_hash": "517d25866ff6557ee06e01882c9e77c1"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/usage/WebsiteUsageFragment.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "6024a3ea01878e80fbd0710c20604dd1",
+    "semantic_hash": "6024a3ea01878e80fbd0710c20604dd1"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/fragments/main/usage/WebsiteUsageViewModel.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "83ceef32708905d038e34d15508442cc",
+    "semantic_hash": "83ceef32708905d038e34d15508442cc"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/overlay/MindfulMessageOverlayManager.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "71acb3a12f2d4d4034f66b25b9706949",
+    "semantic_hash": "71acb3a12f2d4d4034f66b25b9706949"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/overlay/OverlayDragHelper.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "bbf25dcc814c7f4d7c5cd73999f2d5df",
+    "semantic_hash": "bbf25dcc814c7f4d7c5cd73999f2d5df"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/overlay/ReelsOverlayManager.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "d3cb72d572b0df5d9645cce39c57151e",
+    "semantic_hash": "d3cb72d572b0df5d9645cce39c57151e"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/views/FlowerBloomLoadingView.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "7100c17cb84e90bcd5b8d48a7b6f6b78",
+    "semantic_hash": "7100c17cb84e90bcd5b8d48a7b6f6b78"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/views/HorizontalNumberPicker.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "012e86c4c04f913aa8a89aec3b487cde",
+    "semantic_hash": "012e86c4c04f913aa8a89aec3b487cde"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/views/WeeklyBarGraphView.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "5359e75e373ca3d75f235ad1bae53fc1",
+    "semantic_hash": "5359e75e373ca3d75f235ad1bae53fc1"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/widgets/ReelsWidgetProvider.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "21f8ff2e93bbfd0862b866cd00c4d7ad",
+    "semantic_hash": "21f8ff2e93bbfd0862b866cd00c4d7ad"
+  },
+  "app/src/main/java/neth/iecal/curbox/ui/widgets/ScreentimeWidgetProvider.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "4a3a687d877b3e32b1893b4442f97219",
+    "semantic_hash": "4a3a687d877b3e32b1893b4442f97219"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/AccessibilityHelper.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "22ff893bd8e9e495f719d9d97f86735d",
+    "semantic_hash": "22ff893bd8e9e495f719d9d97f86735d"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/AppSuspendHelper.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "848fc626a8a0daf658bac0c9d6dcbf34",
+    "semantic_hash": "848fc626a8a0daf658bac0c9d6dcbf34"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/BackupTools.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "30c0b77da6374df168c9ce6449695016",
+    "semantic_hash": "30c0b77da6374df168c9ce6449695016"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/ColorUtils.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "2874d39ce572b2800fd9fad99c16388d",
+    "semantic_hash": "2874d39ce572b2800fd9fad99c16388d"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/DataStore.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "f463ce2131931025c6ee386aa0e4cc84",
+    "semantic_hash": "f463ce2131931025c6ee386aa0e4cc84"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/DndHelper.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "c48ca53495329df0c9aec5c1d7924235",
+    "semantic_hash": "c48ca53495329df0c9aec5c1d7924235"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/DonationPrompt.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "453aa32c7256648717fe143d733c4c91",
+    "semantic_hash": "453aa32c7256648717fe143d733c4c91"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/MonochromeTools.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "345ee1fe45aff4549311cf5e433bf3c4",
+    "semantic_hash": "345ee1fe45aff4549311cf5e433bf3c4"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/PackageFinderTools.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "895675bca7950f74ff597123e9cf3836",
+    "semantic_hash": "895675bca7950f74ff597123e9cf3836"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/PermissionUtils.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "80e3acd84eba02235f70b1c558b2099c",
+    "semantic_hash": "80e3acd84eba02235f70b1c558b2099c"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/ShizukuRunner.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "9fa1f9c0afbd49640222be57093a99b7",
+    "semantic_hash": "9fa1f9c0afbd49640222be57093a99b7"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/TimeTools.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "a00608a21f5a86618d7c759857b6d071",
+    "semantic_hash": "a00608a21f5a86618d7c759857b6d071"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/TimerNotification.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "027a21c039fdf0d6abc79414485ebad8",
+    "semantic_hash": "027a21c039fdf0d6abc79414485ebad8"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/UsageStatsHelper.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "b6569eba1225a7b4b8abfd55c4ae219c",
+    "semantic_hash": "b6569eba1225a7b4b8abfd55c4ae219c"
+  },
+  "app/src/main/java/neth/iecal/curbox/utils/ViewUtils.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "a809fa4135a67570ead5ba9adfbb376a",
+    "semantic_hash": "a809fa4135a67570ead5ba9adfbb376a"
+  },
+  "app/src/test/java/neth/iecal/curbox/blockers/uihider/script/ScriptLanguageTest.kt": {
+    "mtime": 1781869382.0,
+    "ast_hash": "fbf877711b5f80edf85bab7b01f7a75d",
+    "semantic_hash": "fbf877711b5f80edf85bab7b01f7a75d"
+  },
+  "build.gradle.kts": {
+    "mtime": 1781869382.0,
+    "ast_hash": "0239aa442ea58e017e8f1c1361433b6a",
+    "semantic_hash": "0239aa442ea58e017e8f1c1361433b6a"
+  },
+  "gradlew": {
+    "mtime": 1781869382.0,
+    "ast_hash": "02c16663c6f0aa37f98d94d698c22b8c",
+    "semantic_hash": "02c16663c6f0aa37f98d94d698c22b8c"
+  },
+  "settings.gradle.kts": {
+    "mtime": 1781869382.0,
+    "ast_hash": "c8d93fb578dd50d15cb37f8560133632",
+    "semantic_hash": "c8d93fb578dd50d15cb37f8560133632"
+  }
+}
