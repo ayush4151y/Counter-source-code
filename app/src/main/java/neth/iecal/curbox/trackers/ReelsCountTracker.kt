@@ -17,9 +17,7 @@ import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityNodeInfo
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import neth.iecal.curbox.blockers.ReelBlocker
@@ -56,13 +54,6 @@ class ReelsCountTracker {
 
     private val lastDynamicText = mutableMapOf<String, String>()
     private val seenReelsCache = mutableMapOf<String, LruCache<String, Boolean>>()
-
-    private var lastReelActivityMs = 0L
-    private var removeOverlayDebounceJob: Job? = null
-    private val overlayRemovalDelayMs = 3000L
-
-    private var consecutiveCheckFailures = 0
-    private val maxConsecutiveFailuresBeforeHide = 5
 
     private var ignored = listOf<String>()
     fun setup(service: BaseBlockingService, overlayManager: ReelsOverlayManager) {
@@ -101,69 +92,63 @@ class ReelsCountTracker {
 
             if (reelData.containsKey(pkg)) {
                 if((event.eventType and reelData[pkg]!!.eventType) == 0) return
-
-                removeOverlayDebounceJob?.cancel()
-                lastReelActivityMs = SystemClock.uptimeMillis()
-
                 if (Settings.canDrawOverlays(service) && !overlayManager.isOverlayVisible) {
                     overlayManager.reelsScrolledThisSession = todayCount
                     overlayManager.startDisplaying(overlayConfig, isOnDisplayCounter)
                 }
 
                 checkForReelProgression(pkg, reelData[pkg]!!)
-            } else {
-                if (overlayManager.isOverlayVisible) {
-                    val timeSinceReel = SystemClock.uptimeMillis() - lastReelActivityMs
-                    if (timeSinceReel >= overlayRemovalDelayMs) {
-                        overlayManager.removeOverlay()
-                    } else if (removeOverlayDebounceJob?.isActive != true) {
-                        removeOverlayDebounceJob = scope.launch {
-                            delay(overlayRemovalDelayMs - timeSinceReel)
-                            if (SystemClock.uptimeMillis() - lastReelActivityMs >= overlayRemovalDelayMs) {
-                                overlayManager.removeOverlay()
-                            }
-                        }
-                    }
-                }
+            } else if (overlayManager.isOverlayVisible) {
+                overlayManager.removeOverlay()
+                return
             }
+
 
         } catch (_: Exception) { }
     }
 
     private fun checkForReelProgression(pkg: String, data: ReelAppData) {
-        val root = service.rootInActiveWindow ?: failCheck()
+        val root = service.rootInActiveWindow ?: return
+
+        Log.d("reel","searchin view $data")
+
         val viewNode = NodeFinder.findFirst(root, data.viewId)
+        Log.d("reel",viewNode.toString())
 
         if (viewNode == null || !isViewInBounds(viewNode)) {
             viewNode?.let { NodeFinder.recycle(it) }
-            failCheck()
+            hideReelCounter()
             return
         }
         NodeFinder.recycle(viewNode)
+        Log.d("reel","found view")
 
+        // Check if required views are present
         for (req in data.requiresPresent) {
             val node = NodeFinder.findFirst(root, req)
             if (node == null || !isViewInBounds(node)) {
                 node?.let { NodeFinder.recycle(it) }
-                failCheck()
+                hideReelCounter()
                 return
             }
             NodeFinder.recycle(node)
         }
 
+        Log.d("reel","all present")
+
+        // Check if requires absent views are found
         for (req in data.requiresAbsent) {
             val node = NodeFinder.findFirst(root, req)
             if (node != null && isViewInBounds(node)) {
                 NodeFinder.recycle(node)
-                failCheck()
+                hideReelCounter()
                 return
             }
             node?.let { NodeFinder.recycle(it) }
         }
+        Log.d("reel","all absent")
 
-        consecutiveCheckFailures = 0
-        showReelCounter()
-
+        // Loop dynamic comparator viewgroups and extract text
         var currentText = ""
         for (compId in data.dynamicComparator) {
             val compNode = NodeFinder.findFirst(root, compId)
@@ -172,6 +157,8 @@ class ReelsCountTracker {
                 NodeFinder.recycle(compNode)
             }
         }
+
+        Log.d("reel_text",currentText)
 
         if (currentText.trim().isBlank()) return
 
@@ -186,25 +173,10 @@ class ReelsCountTracker {
                     appCache.put(currentText, true)
                 }
             }
-
+            
             if (isSubstantialChange || currentText.length > previousText.length) {
                 lastDynamicText[pkg] = currentText
             }
-        }
-    }
-
-    private fun failCheck() {
-        consecutiveCheckFailures++
-        if (consecutiveCheckFailures >= maxConsecutiveFailuresBeforeHide) {
-            hideReelCounter()
-        }
-    }
-
-    private fun showReelCounter() {
-        if (isOnDisplayCounter) {
-            overlayManager.binding?.reelLabel?.visibility = View.VISIBLE
-            overlayManager.binding?.reelCounter?.visibility = View.VISIBLE
-            overlayManager.binding?.reelUnit?.visibility = View.VISIBLE
         }
     }
 
@@ -241,19 +213,14 @@ class ReelsCountTracker {
         }
         todayCount++
         overlayManager.reelsScrolledThisSession = todayCount
-        lastReelActivityMs = SystemClock.uptimeMillis()
 
         if (isOnDisplayCounter) {
-            overlayManager.binding?.reelLabel?.visibility = View.VISIBLE
             overlayManager.binding?.reelCounter?.apply {
                 visibility = View.VISIBLE
                 text = todayCount.toString()
             }
-            overlayManager.binding?.reelUnit?.visibility = View.VISIBLE
         } else {
-            overlayManager.binding?.reelLabel?.visibility = View.GONE
             overlayManager.binding?.reelCounter?.visibility = View.GONE
-            overlayManager.binding?.reelUnit?.visibility = View.GONE
         }
 
         scope.launch {
@@ -286,16 +253,12 @@ class ReelsCountTracker {
     }
 
     fun onDestroy() {
-        removeOverlayDebounceJob?.cancel()
-        overlayManager.removeOverlay()
         overlayManager.binding = null
         try { service.unregisterReceiver(refreshReceiver) } catch (_: Exception) {}
     }
 
     private fun hideReelCounter() {
-        overlayManager.binding?.reelLabel?.visibility = View.GONE
         overlayManager.binding?.reelCounter?.visibility = View.GONE
-        overlayManager.binding?.reelUnit?.visibility = View.GONE
     }
 
     private fun isSubstantialTextChange(currentText: String, previousText: String): Boolean {

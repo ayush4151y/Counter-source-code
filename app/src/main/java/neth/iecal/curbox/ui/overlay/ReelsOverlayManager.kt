@@ -36,16 +36,12 @@ class ReelsOverlayManager(private val context: Context) {
         val alpha = (config.bgOpacity * 255 / 100)
 
         binding?.root?.setBackgroundColor(Color.argb(alpha, r, g, b))
-
-        val counterVisible = if (isVisible) View.VISIBLE else View.GONE
-        binding?.reelLabel?.visibility = counterVisible
         binding?.reelCounter?.apply {
-            visibility = counterVisible
+            visibility = if (isVisible) View.VISIBLE else View.GONE
             text = reelsScrolledThisSession.toString()
             textSize = config.textSize
             this.alpha = config.textOpacity / 100f
         }
-        binding?.reelUnit?.visibility = counterVisible
         binding?.timeElapsedTxt?.visibility = View.GONE
 
         val dm = context.resources.displayMetrics
@@ -55,7 +51,7 @@ class ReelsOverlayManager(private val context: Context) {
         val layoutParams = LayoutParams(
             LayoutParams.WRAP_CONTENT,
             LayoutParams.WRAP_CONTENT,
-            LayoutParams.TYPE_APPLICATION_OVERLAY,
+            LayoutParams.TYPE_ACCESSIBILITY_OVERLAY,
             LayoutParams.FLAG_NOT_FOCUSABLE or
                     LayoutParams.FLAG_NOT_TOUCHABLE or
                     LayoutParams.FLAG_LAYOUT_IN_SCREEN or

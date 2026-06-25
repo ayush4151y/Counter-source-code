@@ -303,8 +303,6 @@
     <string name="text_opacity_value">Text Opacity: %d%%</string>
     <string name="position_label">Position</string>
     <string name="position_hint">Drag the indicator to set where the overlay appears</string>
-    <string name="reels_tracked">Reels Tracked</string>
-    <string name="reels_unit">reels</string>
 
     <!-- Extracted Strings -->
     <string name="dialog_question_mark">?</string>

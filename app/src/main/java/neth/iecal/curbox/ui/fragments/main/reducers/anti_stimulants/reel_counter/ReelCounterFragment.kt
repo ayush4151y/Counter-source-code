@@ -176,17 +176,11 @@ class ReelCounterFragment : Fragment() {
                 val g = (config.bgColor shr 8) and 0xFF
                 val b = config.bgColor and 0xFF
                 widget.setBackgroundColor(Color.argb(config.bgOpacity * 255 / 100, r, g, b))
-                widget.findViewById<TextView>(R.id.reel_label).apply {
-                    visibility = View.VISIBLE
-                }
                 widget.findViewById<TextView>(R.id.reel_counter).apply {
                     visibility = View.VISIBLE
                     text = "42"
                     textSize = config.textSize
                     alpha = config.textOpacity / 100f
-                }
-                widget.findViewById<TextView>(R.id.reel_unit).apply {
-                    visibility = View.VISIBLE
                 }
                 widget.findViewById<TextView>(R.id.time_elapsed_txt).apply {
                     visibility = View.GONE
